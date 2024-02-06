@@ -75,8 +75,8 @@ jobs:
       - name: Copy Custom UI Pro Module
         run: cp mod/ui-pro node_modules/@nuxt/ui-pro/modules/pro/index.ts
 
-      - name: Copy Custom UI Pro Module
-        run: cp mod/ui-pro-edge node_modules/@nuxt/ui-pro-edge/modules/pro/index.ts
+#      - name: Copy Custom UI Pro Module
+#        run: cp mod/ui-pro-edge node_modules/@nuxt/ui-pro-edge/modules/pro/index.ts
 
       - name: Generate
         run: npx nuxi build --preset github_pages
