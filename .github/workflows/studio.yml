@@ -65,6 +65,12 @@ jobs:
 
       - name: Create .nuxtrc
         run: echo $'\nautoImport=true\nmodules[]=@nuxthq/studio' >> .nuxtrc
+        
+      - name: Copy Custom UI Pro Module
+        run: pwd
+
+      - name: Copy Custom UI Pro Module
+        run: ls -al
 
       - name: Copy Custom UI Pro Module
         run: cp mod/ui-pro node_modules/@nuxt/ui-pro/modules/pro/index.ts
