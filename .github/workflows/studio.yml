@@ -66,8 +66,14 @@ jobs:
       - name: Create .nuxtrc
         run: echo $'\nautoImport=true\nmodules[]=@nuxthq/studio' >> .nuxtrc
 
+      - name: Copy Custom UI Pro Module
+        run: cp mod/ui-pro node_modules/@nuxt/ui-pro/modules/pro/index.ts
+
+      - name: Copy Custom UI Pro Module
+        run: cp mod/ui-pro-edge node_modules/@nuxt/ui-pro-edge/modules/pro/index.ts
+
       - name: Generate
-        run: npx nuxi dev --host --preset github_pages
+        run: npx nuxi build --preset github_pages
         env:
           NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
           NUXT_PUBLIC_STUDIO_TOKENS: 0ec72c88f4aaa9d039498b2ef4aa4bf6831de4385e4107bfe6cae93696453ecb
