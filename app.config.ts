@@ -10,26 +10,26 @@ export default defineAppConfig({
     }
   },
   seo: {
-    siteName: 'Nuxt UI Pro - Docs template',
+    siteName: 'Useful Tools',
   },
   header: {
     logo: {
-      alt: '',
-      light: '',
+      alt: 'Useful Tools',
+      light: '/favicon.ico',
       dark: ''
     },
     search: true,
     colorMode: true,
     links: [{
       icon: 'i-simple-icons-github',
-      to: 'https://github.com/nuxt-ui-pro/docs',
+      to: 'https://github.com/vital121?tab=repositories',
       target: '_blank',
-      'aria-label': 'Docs template on GitHub'
+      'aria-label': 'on GitHub'
     }]
   },
   footer: {
-    credits: 'Copyright © 2023',
-    colorMode: false,
+    credits: 'Copyright © 2024',
+    colorMode: true,
     links: [{
       icon: 'i-simple-icons-nuxtdotjs',
       to: 'https://nuxt.com',
